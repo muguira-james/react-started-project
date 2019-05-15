@@ -9,9 +9,9 @@ class FormContainer extends React.Component {
     this.state = {
       title: props.title
     };
-    this.handleChange = this.handleChange.bind(this);
+    
   }
-  handleChange(event) {
+  handleChange = (event) => {
       this.setState( { [event.target.id] : event.target.value } )
   }
   render() {
@@ -23,7 +23,7 @@ class FormContainer extends React.Component {
           label="seo_title"
           type="text"
           id="seo_title"
-          value={this.state.title}
+          value="enter your Mr Spock quote"
           handleChange={this.handleChange}
         />
       </form>

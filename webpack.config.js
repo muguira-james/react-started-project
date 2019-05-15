@@ -1,5 +1,6 @@
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+var Visualizer = require('webpack-visualizer-plugin');
 
 module.exports = {
     module: {
@@ -18,10 +19,19 @@ module.exports = {
                     loader: "html-loader"
                 }
             ]
+        },
+        {
+          test: /\.scss$/,
+          use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader'
+          ]
         }
       ]
     },
     plugins: [
+      new Visualizer({ filename: './statistics.html' }),
         new HtmlWebPackPlugin({
             template: "./public/index.html",
             filename: "./index.html"
