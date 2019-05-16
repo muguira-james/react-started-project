@@ -30,7 +30,9 @@ Feature: test the form
 Scenario: draw a form
 
 Given I have a page
+
 When the form is drawn
+
 Then the props are correct
 
 Yes, it is silly but it does shouw that Cucumber can live in the project.
