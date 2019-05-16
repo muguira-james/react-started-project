@@ -15,7 +15,7 @@ class FormContainer extends React.Component {
       this.setState( { [event.target.id] : event.target.value } )
   }
   render() {
-    console.log("state->", this.state)
+    // console.log("state->", this.state)
     return (
       <form id="article-form">
         <Inputs
