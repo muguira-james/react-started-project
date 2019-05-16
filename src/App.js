@@ -1,6 +1,6 @@
 import React from "react"
-import './App.scss'
-import './App.css'
+// import './App.scss'
+import './style.css'
 
 import FormContainer from './components/FormContainer'
 
