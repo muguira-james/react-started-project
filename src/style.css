@@ -1,0 +1,22 @@
+
+  
+  .app {
+    background-color: skyblue;
+    color: black;
+    width: 450px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .my-form {
+    display: flex;
+    flex-direction: row;
+  }
+  #a_quote {
+    background-color: rgb(67, 199, 148);
+    color: black;
+}
+
+.form-text-label {
+    padding: 15px;
+}
