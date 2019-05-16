@@ -7,12 +7,13 @@ class FormContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: props.title
+      title: props.title,
+      inputValue: "enter your Mr Spock quote"
     };
     
   }
   handleChange = (event) => {
-      this.setState( { [event.target.id] : event.target.value } )
+      this.setState( { inputValue: event.target.value } )
   }
   render() {
     // console.log("state->", this.state)
@@ -23,7 +24,7 @@ class FormContainer extends React.Component {
           label="seo_title"
           type="text"
           id="seo_title"
-          value="enter your Mr Spock quote"
+          value={this.state.inputValue}
           handleChange={this.handleChange}
         />
       </form>

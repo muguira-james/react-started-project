@@ -8,14 +8,14 @@ class Inputs extends React.Component {
       let { label, text, type, id, value, handleChange } = this.props
       return (
         <div className="input-stuff">
-          <label htmlFor={label}>{text}</label>
+          <label className="form-text-label" htmlFor={label}>{text}</label>
           <input
             type={type}
             className="inputs-control"
             id={id}
             value={value}
             onChange={handleChange}
-            required
+        
           />
         </div>
       )
