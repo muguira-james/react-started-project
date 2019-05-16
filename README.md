@@ -1,5 +1,5 @@
 
-# This is a "roll your own" started for React
+# This is a "roll your own" starter for React
 
 ## Included
 
